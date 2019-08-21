@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Roboto:700&display=swap');
+
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 nav {
@@ -14,8 +18,11 @@ nav {
 }
 
 #navbar-header {
-    font-size: 1.1em;
-    padding: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em;
     border-bottom: 1px solid black;
 }
 
@@ -28,7 +35,7 @@ nav {
 }
 
 .nav-link {
-    padding: 0.7em;
+    padding: 0.5em;
     font-size: 1.25em;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
@@ -38,7 +45,11 @@ nav {
 
 .nav-link:hover {
     background: #9b9b9b;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -ms-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    transition-duration: 0.6s;
 }
 
 /* main page */
@@ -49,13 +60,18 @@ nav {
     font-size: 18px;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: stretch;
 }
 
 .section-header {
-    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     padding: 25px 0;
     font-size: 29px;
+}
+
+ul {
+    list-style: none;
 }
 
 p {
@@ -63,9 +79,56 @@ p {
 }
 
 .section-list {
-    padding: 15px 0 15px 75px;
+    padding: 10px 0 10px 75px;
 }
 
 .section-list-li {
-    padding: 15px 0;
+    padding: 10px 0;
+}
+
+code {
+    padding: 5px;
+    background: #d7d7d7;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #bebebe;
+    text-align: center;
+    padding: 10px 10px 10px 100px;
+}
+
+#copyright {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.fab {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.footer-social .fab:hover {
+    color: #212121;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -ms-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+
+.list-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.list-inline-item {
+    padding: 0 10px;
 }
