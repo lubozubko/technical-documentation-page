@@ -12,7 +12,7 @@ nav {
     flex-direction: column;
     position: fixed;
     background: lightgrey;
-    border-right: 2px solid gray;
+    border-right: 2px solid grey;
     width: 250px;
     height: 100%;
 }
@@ -45,7 +45,6 @@ nav {
     font-size: 1.25em;
     position: relative;
     display: block;
-    border-left: 1px solid black;
     border-bottom: 1px solid black;
     color: black;
     text-decoration: none;
@@ -105,10 +104,10 @@ code {
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background: #bebebe;
     text-align: center;
-    padding: 5px 10px 5px 100px;
+    padding: 5px 10px 5px 280px;
 }
 
 #copyright {
@@ -144,17 +143,29 @@ footer {
 /* media query */
 
 @media (max-width: 760px) {
-  nav {
-    justiy-content: stretch;
-    height: 300px;
-    width: 100%;
-  }
-  
-  .main-section {
-    padding: 15px 35px 15px 35px;
+    nav {
+        justify-content: stretch;
+        border-bottom: 2px solid grey;
+        height: 300px;
+        width: 100%;
+    }
+
+    #Reference {
+        border: none;
+    }
+
+    #Introduction {
+        padding: 305px 35px 15px 35px;
+    }
+
+    .main-section {
+        padding: 15px 35px;
+    }
+
+
+    footer {
+        padding: 5px 15px;
+        justify-content: space-between;
+    }
+
 }
-  
-  footer {
-    padding: 5px 15px;
-    justify-content: space-between;
-  }
