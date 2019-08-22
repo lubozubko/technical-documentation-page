@@ -108,7 +108,7 @@ footer {
     justify-content: space-around;
     background: #bebebe;
     text-align: center;
-    padding: 10px 10px 10px 100px;
+    padding: 5px 10px 5px 100px;
 }
 
 #copyright {
@@ -140,3 +140,21 @@ footer {
 .list-inline-item {
     padding: 0 10px;
 }
+
+/* media query */
+
+@media (max-width: 760px) {
+  nav {
+    justiy-content: stretch;
+    height: 300px;
+    width: 100%;
+  }
+  
+  .main-section {
+    padding: 15px 35px 15px 35px;
+}
+  
+  footer {
+    padding: 5px 15px;
+    justify-content: space-between;
+  }
