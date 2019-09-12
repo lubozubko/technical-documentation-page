@@ -7,6 +7,10 @@
     font-weight: 300;
 }
 
+html {
+scroll-behavior: smooth;
+}
+
 nav {
     display: flex;
     flex-direction: column;
